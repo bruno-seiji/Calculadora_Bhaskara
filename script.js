@@ -18,8 +18,8 @@ function Calc() {
     Res.innerHTML +=
       '<p>Para a seguinte equação: ' + A + 'x² + ' + B + 'x + ' + C + ' = 0</p>'
     Res.innerHTML += '<p>Temos:</p>'
-    Res.innerHTML += '<p>x1 = ' + x1 + '</p>'
-    Res.innerHTML += '<p>x2 = ' + x2 + '</p>'
+    Res.innerHTML += '<p>x1 = ' + x1.toFixed(3) + '</p>'
+    Res.innerHTML += '<p>x2 = ' + x2.toFixed(3) + '</p>'
   }
   document.getElementById('valor_a').value = ''
   document.getElementById('valor_b').value = ''

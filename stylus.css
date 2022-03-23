@@ -7,24 +7,29 @@ body {
 }
 
 #container {
-  width: 80%;
+  width: 80vw;
   height: auto;
   background: white;
   border-radius: 0.5rem;
   margin: auto;
-  padding: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+#Intro {
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 
 #txt1 {
-  display: inline-block;
-  vertical-align: top;
   width: 50%;
-  font-size: 1.5rem;
 }
 
 img {
-  width: 48%;
-  margin-top: 0.5rem;
+  width: 50%;
 }
 
 #txt2 {

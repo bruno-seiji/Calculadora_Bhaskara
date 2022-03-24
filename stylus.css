@@ -1,5 +1,8 @@
 header {
   text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem;
 }
 
 body {
@@ -11,84 +14,70 @@ body {
   height: auto;
   background: white;
   border-radius: 0.5rem;
+  display: grid;
   margin: auto;
-  position: relative;
-  text-align: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(9, auto);
+  row-gap: 0.8rem;
+  padding: 1rem;
 }
 
-#Intro {
-  display: flex;
-  top: 0;
-  width: 100%;
-  height: auto;
+.txt1 {
+  justify-content: center;
   align-items: center;
-}
-
-#txt1 {
-  width: 50%;
-}
-
-img {
-  width: 50%;
-}
-
-#txt2 {
-  padding-top: 2rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-left: 8%;
-  width: 15%;
-}
-#txt3 {
-  padding-top: 2rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-left: 21%;
-  width: 15%;
-}
-#txt4 {
-  padding-top: 2rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-left: 21%;
-  width: 15%;
-}
-#txt5 {
-  width: 25%;
-  font-weight: bold;
-  margin-top: 2rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 
-#valor_a {
-  width: 25%;
-  margin-right: 10%;
-}
-#valor_b {
-  width: 25%;
-  margin-right: 10%;
-}
-#valor_c {
-  width: 25%;
+.formula_img {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-#dec {
-  width: 25%;
+.texto_valores {
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-#obs {
+.valores {
+  width: 100%;
+}
+
+.obs {
   color: red;
 }
 
-#bton {
-  text-align: center;
-  margin-top: 2rem;
+.bton {
+  justify-self: center;
 }
 
 #RES {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.obs,
+.txt1,
+.formula_img,
+.bton,
+#RES {
+  grid-column: span 2;
 }
 
 footer {
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/*-----------------------Responsividade---------------------*/
+
+@media screen and (min-width: 1280px) {
+  header {
+    font-size: 4rem;
+  }
 }

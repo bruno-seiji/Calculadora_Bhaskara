@@ -1,9 +1,9 @@
 function Calc() {
-  var A = Number(document.getElementById('valor_a').value)
-  var B = Number(document.getElementById('valor_b').value)
-  var C = Number(document.getElementById('valor_c').value)
+  var A = Number(document.querySelector('.valor_a').value)
+  var B = Number(document.querySelector('.valor_b').value)
+  var C = Number(document.querySelector('.valor_c').value)
   var Res = document.getElementById('RES')
-  var Ndecimal = Number(document.getElementById('dec').value)
+  var Ndecimal = Number(document.querySelector('.dec').value)
   var x1 = 0
   var x2 = 0
   var Delta = B * B - 4 * A * C
@@ -31,10 +31,10 @@ function Calc() {
       Res.innerHTML += '<p>x1 = ' + x1.toFixed(Ndecimal) + '</p>'
       Res.innerHTML += '<p>x2 = ' + x2.toFixed(Ndecimal) + '</p>'
     }
-    document.getElementById('valor_a').value = ''
-    document.getElementById('valor_b').value = ''
-    document.getElementById('valor_c').value = ''
-    document.getElementById('dec').value = ''
-    document.getElementById('valor_a').focus()
+    document.querySelector('.valor_a').value = ''
+    document.querySelector('.valor_b').value = ''
+    document.querySelector('.valor_c').value = ''
+    document.querySelector('.dec').value = ''
+    document.querySelector('.valor_a').focus()
   }
 }

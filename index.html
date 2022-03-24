@@ -4,41 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="stylus.css" />
     <title>Calculadora Bhaskara</title>
   </head>
   <body>
     <header><h1>Calculadora Bhaskara</h1></header>
-    <div id="container">
-      <div id="Intro">
-        <p id="txt1">Considerar a seguinte forma:</p>
-        <img src="eq-2grau.png" alt="" />
-      </div>
 
-      <div id="Variaveis"></div>
-    </div>
-    <!--------
-      <div id="txt2">Valor de a</div>
-      <div id="txt3">Valor de b</div>
-      <div id="txt4">Valor de c</div>
-      <div>
-        <input id="valor_a" type="number" />
-        <input id="valor_b" type="number" />
-        <input id="valor_c" type="number" />
-      </div>
-      <div>
-        <div id="txt5">Casas Decimais</div>
-        <input id="dec" type="number" />
-        <p id="obs">*OBS: Utilizar valore entre 1 e 50 para casas decimais</p>
-      </div>
+    <section id="container">
+      <p class="txt1">Considerar a seguinte forma:</p>
+      <img class="formula_img" src="eq-2grau.png" alt="" />
 
-      <div id="bton">
-        <button id="button" onclick="Calc()">Calcular</button>
-      </div>
+      <div class="texto_valores">Valor de a</div>
+      <input class="valor_a" type="number" />
 
+      <div class="texto_valores">Valor de b</div>
+      <input class="valor_b" type="number" />
+
+      <div class="texto_valores">Valor de c</div>
+      <input class="valor_c" type="number" />
+
+      <div class="texto_valores">Casas Decimais</div>
+      <input class="dec" type="number" />
+
+      <p class="obs">*OBS: Utilizar valore entre 1 e 50 para casas decimais</p>
+
+      <div class="bton">
+        <button class="button" onclick="Calc()">Calcular</button>
+      </div>
 
       <p id="RES"></p>
-    </div>--->
+    </section>
+
     <footer><p>&copy; BSCC</p></footer>
     <script src="script.js"></script>
   </body>

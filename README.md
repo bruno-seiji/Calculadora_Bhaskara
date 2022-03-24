@@ -1,2 +1,5 @@
-# Exemplo FrontEnd EQ 2Gra Bhaskara
- Ferramenta de Calculo das raizes de uma equação de 2º Grau, utilizando formula de Bhaskara
+# Calculadora Bhaskara
+---
+## Objetivo
+ Desenvolver uma ferramenta web, para calculo das raizes de uma equação de 2º Grau, utilizando formula de Bhaskara.
+ Utilizando conceitos de display:grid, fazer desta ferramenta responsiva, tanto para mobile, quanto para desktop.
